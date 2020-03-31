@@ -3,11 +3,11 @@ import board
 import neopixel
 pixels = neopixel.NeoPixel(board.D18, 256)
 
-from .text import TextLed
+import TextLed
 
 def on():
     # every mutliples of 32 are first pixel
-    pixels = TextLed("Airbus")
+    pixels = TextLed.getLeds("Airbus")
 
 def test():
     # swift on first led in red just for test
