@@ -7,6 +7,7 @@ import TextLed
 
 def on():
     # every mutliples of 32 are first pixel
+    # pixels object is not an array tw we need to enumerate again
     for i, led in enumerate(TextLed.getLeds("AIRBUS")):
         pixels[i] = led
 
