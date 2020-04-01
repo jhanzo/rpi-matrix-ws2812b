@@ -7,9 +7,10 @@ import TextLed
 
 def on():
     # every mutliples of 32 are first pixel
-    pixels = TextLed.getLeds("Airbus")
+    for i, led in enumerate(TextLed.getLeds("AIRBUS")):
+        pixels[i] = led
 
-def test():
+def px():
     # swift on first led in red just for test
     pixels[0] = (20, 0, 0)
 
